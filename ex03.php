@@ -11,20 +11,25 @@ NÚMEROS -->
     <h3>Questão 03</h3>
     <form method = "POST">
         <label> Digite um número de 1 a 7:</label><br><br>
-        <input type="number" name="num" step="1" required><br><br>
+        <input type="datalist" name="dia" step="1" required><br><br>
         <label> Digite um número de 1 a 12:</label><br><br>
-        <input type="number" name="num" step="1" required><br><br>
+        <input type="" name="mes" step="1" required><br><br>
         <button type="submit">Responder</button><br><br>
     </form>
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        $dia= $_POST["dia"] ?? 0;
+        $mes= $_POST["mes"] ?? 0;
+        $result= $_POST["result"] ?? 0;
         
-        $num= $_POST["num"] ?? 0;
-        switch($num){
-            case 1: 
+
+
+        switch($result){
+            case "dia": 
                 echo "";
                 break;
-            case 2: 
+            case "mes": 
                 echo "";
                 break;
             case 3: 
