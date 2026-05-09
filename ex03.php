@@ -21,25 +21,92 @@ NÚMEROS -->
 
         $dia= $_POST["dia"] ?? 0;
         $mes= $_POST["mes"] ?? 0;
-        $result= $_POST["result"] ?? 0;
         
+    switch ($dia) {
+    case 1:
+        echo "Domingo<br>";
+        break;
 
+    case 2:
+        echo "Segunda-feira<br>";
+        break;
 
-        switch($result){
-            case "dia": 
-                echo "";
-                break;
-            case "mes": 
-                echo "";
-                break;
-            case 3: 
-                echo "";
-                break;
-            case 4: echo "";
-                break;
-            default: echo "";
-        }
-    }
+    case 3:
+        echo "Terça-feira<br>";
+        break;
+
+    case 4:
+        echo "Quarta-feira<br>";
+        break;
+
+    case 5:
+        echo "Quinta-feira<br>";
+        break;
+
+    case 6:
+        echo "Sexta-feira<br>";
+        break;
+
+    case 7:
+        echo "Sábado<br>";
+        break;
+
+    default:
+        echo "Dia inválido<br>";
+}
+switch ($mes) {
+    case 1:
+        echo "Janeiro";
+        break;
+
+    case 2:
+        echo "Fevereiro";
+        break;
+
+    case 3:
+        echo "Março";
+        break;
+
+    case 4:
+        echo "Abril";
+        break;
+
+    case 5:
+        echo "Maio";
+        break;
+
+    case 6:
+        echo "Junho";
+        break;
+
+    case 7:
+        echo "Julho";
+        break;
+
+    case 8:
+        echo "Agosto";
+        break;
+
+    case 9:
+        echo "Setembro";
+        break;
+
+    case 10:
+        echo "Outubro";
+        break;
+
+    case 11:
+        echo "Novembro";
+        break;
+
+    case 12:
+        echo "Dezembro";
+        break;
+
+    default:
+        echo "Mês inválido";
+}        
+}
     ?> 
 </body>
 </html>
