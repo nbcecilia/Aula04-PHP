@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $n4= $_POST["n4"] ?? 0;
 $notafinal= ($n1 + $n2 + $n3 + $n4)/4;
 
-if($notafinal < 5){
+if($notafinal > 0 && $notafinal < 5){
     echo"<h3>Nota final $notafinal, aluno REPROVADO</h3>"; 
 }
 elseif ($notafinal >= 5 && $notafinal <= 7) {
@@ -40,7 +40,7 @@ elseif ($notafinal >= 5 && $notafinal <= 7) {
 elseif ($notafinal >= 7 && $notafinal <= 10) {
     echo"<h3>Nota final $notafinal, aluno APROVADO</h3>";
 }else {
-    echo "<h3>Erro desconhecido</h3>";
+    echo "<h3>Nota Inválida!</h3>";
 }
 }
 ?>
